@@ -108,7 +108,7 @@ if (!fs.existsSync('hooks/hooks.json')) {
 
 // 7. marketplace.json — valid, lists the plugin by matching name + a source.
 if (!fs.existsSync('.claude-plugin/marketplace.json')) {
-  errors.push('MSC Missing .claude-plugin/marketplace.json.');
+  errors.push('Missing .claude-plugin/marketplace.json.');
 } else {
   let mk;
   try { mk = readJSON('.claude-plugin/marketplace.json'); }
